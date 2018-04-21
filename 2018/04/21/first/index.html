@@ -79,17 +79,22 @@
 
 
 
-<meta name="description" content="这周抽了一些时间看了介绍HTTP协议的书籍。这里总结一下。    什么是HTTP协议   Web使用了一种名为HTTP的协议作为规范，完成从客户端到服务器端一系列的运作流程。我的理解是，HTTP协议类似一种规定，数据在传输时都要遵守这一规则，就像写信、写入党申请书的格式一样。                                                TCP/IP协议族">
+<meta name="description" content="这周抽了一些时间看了介绍HTTP协议的书籍。这里总结一下。什么是HTTP协议 Web使用了一种名为HTTP的协议作为规范，完成从客户端到服务器端一系列的运作流程。我的理解是，HTTP协议类似一种规定，数据在传输时都要遵守这一规则，就像写信、写入党申请书的格式。     传输方式通常使用的网络（包括互联网）是在 TCP/IP 协议族的基础上运作的。而 HTTP 属于它内部的一个子集。TCP/IP协议">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HTTP总结">
 <meta property="og:url" content="http://yoursite.com/2018/04/21/first/index.html">
 <meta property="og:site_name" content="SuperLand">
-<meta property="og:description" content="这周抽了一些时间看了介绍HTTP协议的书籍。这里总结一下。    什么是HTTP协议   Web使用了一种名为HTTP的协议作为规范，完成从客户端到服务器端一系列的运作流程。我的理解是，HTTP协议类似一种规定，数据在传输时都要遵守这一规则，就像写信、写入党申请书的格式一样。                                                TCP/IP协议族">
+<meta property="og:description" content="这周抽了一些时间看了介绍HTTP协议的书籍。这里总结一下。什么是HTTP协议 Web使用了一种名为HTTP的协议作为规范，完成从客户端到服务器端一系列的运作流程。我的理解是，HTTP协议类似一种规定，数据在传输时都要遵守这一规则，就像写信、写入党申请书的格式。     传输方式通常使用的网络（包括互联网）是在 TCP/IP 协议族的基础上运作的。而 HTTP 属于它内部的一个子集。TCP/IP协议">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-21T05:39:20.545Z">
+<meta property="og:image" content="http://yoursite.com/2018/04/21/first/1.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/21/first/3.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/21/first/4.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/21/first/5.png">
+<meta property="og:updated_time" content="2018-04-21T07:22:21.720Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTTP总结">
-<meta name="twitter:description" content="这周抽了一些时间看了介绍HTTP协议的书籍。这里总结一下。    什么是HTTP协议   Web使用了一种名为HTTP的协议作为规范，完成从客户端到服务器端一系列的运作流程。我的理解是，HTTP协议类似一种规定，数据在传输时都要遵守这一规则，就像写信、写入党申请书的格式一样。                                                TCP/IP协议族">
+<meta name="twitter:description" content="这周抽了一些时间看了介绍HTTP协议的书籍。这里总结一下。什么是HTTP协议 Web使用了一种名为HTTP的协议作为规范，完成从客户端到服务器端一系列的运作流程。我的理解是，HTTP协议类似一种规定，数据在传输时都要遵守这一规则，就像写信、写入党申请书的格式。     传输方式通常使用的网络（包括互联网）是在 TCP/IP 协议族的基础上运作的。而 HTTP 属于它内部的一个子集。TCP/IP协议">
+<meta name="twitter:image" content="http://yoursite.com/2018/04/21/first/1.png">
 
 
 
@@ -341,11 +346,15 @@
       
 
       
-        <p>这周抽了一些时间看了介绍HTTP协议的书籍。这里总结一下。<br>    <div class="note primary"><p>什么是HTTP协议</p></div>  
-Web使用了一种名为HTTP的协议作为规范，完成从客户端到服务器端一系列的运作流程。我的理解是，HTTP协议类似一种规定，数据在传输时都要遵守这一规则，就像写信、写入党申请书的格式一样。<br>                                              
-
-<div class="note primary"><p>TCP/IP协议族</p></div>    </p>
-<p>通常使用的网络（包括互联网）是在 TCP/IP 协议族的基础上运作 的。而 HTTP 属于它内部的一个子集。<br> TCP/IP协议族有四个分层，并通过以下方式进行传递</p>
+        <p>这周抽了一些时间看了介绍HTTP协议的书籍。这里总结一下。<br><div class="note primary"><p>什么是HTTP协议</p></div>
+Web使用了一种名为HTTP的协议作为规范，完成从客户端到服务器端一系列的运作流程。我的理解是，HTTP协议类似一种规定，数据在传输时都要遵守这一规则，就像写信、写入党申请书的格式。    
+<div class="note primary"><p>传输方式</p></div><br>通常使用的网络（包括互联网）是在 TCP/IP 协议族的基础上运作的。而 HTTP 属于它内部的一个子集。<br>TCP/IP协议族有四个分层，并通过以下方式进行传递<br><img src="/2018/04/21/first/1.png" alt="分层传输"><br><div class="note primary"><p>IP协议</p></div>
+IP协议是TCP/IP协议族里，用于- 将数据包**传送**给满足特定条件的计算机。  
+而这里的特定条件，就是常说的IP地址和MAC地址。  
+MAC地址指的是网卡所在的固定地址，一般不会改变；  
+IP地址会随时变化；
+![IP协议](first/2.png)
+<div class="note primary"><p>TCP协议</p></div><br>TCP协议位于传输层，它将大数据分割成小块，并确认数据准确送达<br><img src="/2018/04/21/first/3.png" alt="TCP协议"><br><div class="note primary"><p>DNS服务</p></div><br>DNS服务位于应用层，它负责IP地址和域名（URL）之间的解析服务<br><img src="/2018/04/21/first/4.png" alt="DNS协议"><br>三种协议一起工作时，效果如下：<br><img src="/2018/04/21/first/5.png" alt="协同"></p>
 
       
     </div>
@@ -370,8 +379,8 @@ Web使用了一种名为HTTP的协议作为规范，完成从客户端到服务�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/21/hello-world - 副本 (2)/" rel="next" title="有关HTTP的一些看法">
-                <i class="fa fa-chevron-left"></i> 有关HTTP的一些看法
+              <a href="/2018/04/18/hello-world/" rel="next" title="欢迎进入我的博客">
+                <i class="fa fa-chevron-left"></i> 欢迎进入我的博客
               </a>
             
           </div>
@@ -450,7 +459,7 @@ Web使用了一种名为HTTP的协议作为规范，完成从客户端到服务�
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
